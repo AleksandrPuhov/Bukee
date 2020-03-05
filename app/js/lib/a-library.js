@@ -1,0 +1,4 @@
+function mqqin () {
+    alert("sad")
+
+}
