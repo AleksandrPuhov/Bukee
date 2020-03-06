@@ -4,7 +4,7 @@ const browserSync = require('browser-sync').create();
 const useref = require('gulp-useref');
 const uglify = require('gulp-uglify-es').default;
 const gulpif = require('gulp-if');
-// const cssnano = require('gulp-cssnano');
+const cssnano = require('gulp-cssnano');
 const del = require('del');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
@@ -12,7 +12,8 @@ const sourcemaps = require('gulp-sourcemaps');
 gulp.task('scss', () => {
     return gulp.src('./app/scss/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        //        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./app/css'))
         .pipe(browserSync.reload({
@@ -27,7 +28,7 @@ gulp.task('html', () => {
         }))
 });
 
-gulp.task('script', function () {
+gulp.task('script', () => {
     return gulp.src('app/js/**/*.js')
         .pipe(browserSync.reload({
             stream: true
@@ -46,7 +47,7 @@ gulp.task('useref', () => {
     return gulp.src('app/*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
-        // .pipe(gulpif('*.css',cssnano()))
+        .pipe(gulpif('*.css', cssnano()))
         .pipe(gulpif('*.css', autoprefixer({
             overrideBrowserslist: ["last 8 versions"]
         })))
@@ -63,7 +64,7 @@ gulp.task('img', () => {
         .pipe(gulp.dest('dist/img'))
 });
 
-gulp.task('clean', async function () {
+gulp.task('clean', async () => {
     del.sync('dist')
 })
 
