@@ -1,0 +1,20 @@
+<svg id="bg_lines" data-name="bg lines" xmlns="http://www.w3.org/2000/svg" width="1170" height="1060" viewBox="0 0 1170 1060">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5189a0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="line" class="cls-1" d="M215,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2" data-name="line 2" class="cls-1" d="M345,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2_copy" data-name="line 2 copy" class="cls-1" d="M994,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2_copy_2" data-name="line 2 copy 2" class="cls-1" d="M735,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2_copy_3" data-name="line 2 copy 3" class="cls-1" d="M475,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2_copy_3-2" data-name="line 2 copy 3" class="cls-1" d="M1124,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2_copy_3-3" data-name="line 2 copy 3" class="cls-1" d="M864,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2_copy_4" data-name="line 2 copy 4" class="cls-1" d="M605,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2_copy_4-2" data-name="line 2 copy 4" class="cls-1" d="M1254,0h1V1060h-1V0Z" transform="translate(-215)"/>
+  <path id="line_2_copy_4-3" data-name="line 2 copy 4" class="cls-1" d="M1384,0h1V1060h-1V0Z" transform="translate(-215)"/>
+</svg>

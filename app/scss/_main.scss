@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body, ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,li {
+   list-style: none;
+}
+
+.wrapper {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn-gradient {
+    background-image: $btn-color;
+    padding: 12px 15px;
+    color: $text-color-light;
+    border: 2px solid $color-secondary;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    display: block;
+    text-align: center;
+
+    &:hover {
+        background-image:none;
+        border: 2px solid $color-secondary;
+    }
+}

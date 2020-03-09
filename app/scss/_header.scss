@@ -1,0 +1,104 @@
+.header {
+    background-image: linear-gradient(135deg, #457088, #51aa9c);
+    &-inner {
+        background-image: url(../img/header-bg-lines.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 45px 0;
+        color: $text-color-light;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 1;
+        &-logo {
+        }
+        &-nav {
+            ul {
+                display: flex;
+            }
+            li + li {
+                margin-left: 20px;
+            }
+            a {
+                @include open-sans;
+                display: block;
+                color: $text-color-light;
+                font-size: 16px;
+                padding: 6px 0;
+                border-bottom: 3px solid transparent;
+                transition: $transition-time;
+                letter-spacing: 0.05em;
+
+                &:hover {
+                    border-bottom: 3px solid #65e496;
+                }
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        flex-grow: 1;
+
+        &-wrap {
+            display: flex;
+            align-self: center;
+        }
+
+        &-book {
+            display: block;
+            background-image: url(../img/header-book.svg);
+            background-repeat: no-repeat;
+            height: 640px;
+            min-width: 450px;
+            background-size: contain;
+        }
+        &-info {
+            padding-left: 50px;
+            flex-basis: 55%;
+            &-autor {
+                @include open-sans;
+                font-size: 18px;
+                letter-spacing: $text-letter-spacing;
+                line-height: 24px;
+            }
+            &-title {
+                font-size: 48px;
+                font-weight: bold;
+                letter-spacing: 0.03em;
+                line-height: 44px;
+                margin: 30px 0 5px;
+            }
+            &-subtitle {
+                color: $color-secondary;
+                font-size: 18px;
+                letter-spacing: $text-letter-spacing;
+                line-height: 44px;
+            }
+            &-text {
+                @include open-sans;
+                font-size: 15px;
+                letter-spacing: $text-letter-spacing;
+                line-height: 24px;
+                margin: 25px 0;
+            }
+            &-btn {
+                max-width: 250px;
+                margin: 45px 0 20px;
+            }
+            em {
+                @include open-sans;
+                font-size: 12px;
+                letter-spacing: 0.02em;
+                display: block;
+            }
+        }
+    }
+}

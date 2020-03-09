@@ -1,4 +1,0 @@
-function mazzn () {
-    alert("asdasd")
-
-}

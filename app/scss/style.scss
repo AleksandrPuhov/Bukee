@@ -1,10 +1,4 @@
-$color-main: red;
-$color-secondary: blue;
-
-body {
-    background-color: $color-main;
-}
-
-h1 {
-    color: $color-secondary;
-}
+@import "vars.scss";
+@import "mixins.scss";
+@import "main.scss";
+@import "header.scss";
