@@ -1,3 +1,21 @@
 @mixin open-sans {
     font-family: 'Open Sans', sans-serif;
 }
+
+@mixin title-param {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: $title-letter-spacing;
+}
+
+@mixin subtitle-param {
+    font-size: 18px;
+    line-height: 2.444;
+    letter-spacing: $text-letter-spacing;
+}
+
+@mixin text-param {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: $text-letter-spacing;
+}

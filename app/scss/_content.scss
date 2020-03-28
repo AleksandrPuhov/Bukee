@@ -1,0 +1,32 @@
+.content {
+    background-color: $content-gradient-color;
+
+    &-inner {}
+    &-title {}
+    &-subtitle {}
+    &-info {
+        &-about{
+            &-title {}
+            &-text {}
+            &-links {
+                display: flex;
+                span {}
+                ul { 
+                    display: flex;
+                }
+                li {}
+                &-item {
+                    display: block;
+                    svg {
+                        height: 20px;
+                        path {
+                            fill: $text-color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

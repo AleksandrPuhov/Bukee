@@ -1,9 +1,41 @@
-$text-color-light: #fff;
-
-$color-secondary: #65e496;
-
 $transition-time: .3s;
+
+
+$title-letter-spacing: 0.03em;
 
 $text-letter-spacing: 0.05em;
 
-$btn-color: linear-gradient(to right, $color-secondary, #65e4b0);
+// text and title color
+$text-color-main: rgb(105, 105, 128);
+$title-color-main: rgb(68, 68, 79);
+
+$text-color-secondary: rgb(101, 228, 157);
+
+//
+
+$btn-gradient-color: linear-gradient(270deg, rgb(101,228,206) 0%, rgb(101,228,161) 100%);
+$btn-text-color: #ffffff;
+$btn-box-shadow: 0px 2px 0px 0px rgba(101, 228, 125, 0.5);
+
+$header-bg-gradient:linear-gradient( -45deg, rgb(84,183,161) 0%, rgb(66,99,132) 100%);
+$header-text-color: #ffffff;  
+
+$author-bg-photo-gradient:linear-gradient( -45deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%);
+
+$content-gradient-color: #f5f6fa;
+
+
+
+  
+  
+
+// $breakpoints: (
+//   "phone"       : 400px,
+//   "phone-wide"  : 480px,
+//   "phablet"     : 560px,
+//   "tablet-small": 640px,
+//   "tablet"      : 768px,
+//   "tablet-wide" : 1024px,
+//   "desktop"     : 1248px,
+//   "desktop-wide": 1440px
+// );

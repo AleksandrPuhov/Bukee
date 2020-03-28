@@ -26,17 +26,18 @@ ul,li {
 }
 
 .btn-gradient {
-    background-image: $btn-color;
+    background-image: $btn-gradient-color;
     padding: 12px 15px;
-    color: $text-color-light;
-    border: 2px solid $color-secondary;
+    color: $btn-text-color;
     border-radius: 3px;
     letter-spacing: 0.1em;
     display: block;
     text-align: center;
+    box-shadow: $btn-box-shadow;
+    transition: $transition-time;
 
     &:hover {
-        background-image:none;
-        border: 2px solid $color-secondary;
+        color: $text-color-main;
+        text-decoration: underline;
     }
 }

@@ -1,0 +1,47 @@
+.author {
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 160px 0 50px;
+    }
+    &-info {
+        flex-basis: 570px;
+        margin-right: 10px;
+        &-name {
+            color: $text-color-main;
+            @include open-sans;
+            @include subtitle-param;
+        }
+        &-title {
+            color: $title-color-main;
+            @include title-param;
+            margin: 10px 0;
+        }
+        &-subtitle {
+            color: $text-color-secondary;
+            @include subtitle-param;
+        }
+        &-text {
+            @include text-param;
+            @include open-sans;
+            color: $text-color-main;
+            margin: 25px 0;
+        }
+        &-btn {
+            max-width: 240px;
+            margin-top: 45px;
+        }
+    }
+
+    &-photo {
+        img {
+            background-image: $author-bg-photo-gradient;
+            background-size: calc(100% - 50px) 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+            padding: 50px 50px 50px 0;
+    
+        }
+    }
+
+}
