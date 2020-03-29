@@ -1,32 +1,108 @@
 .content {
     background-color: $content-gradient-color;
 
-    &-inner {}
-    &-title {}
-    &-subtitle {}
+    &-inner {
+        padding: 150px 0 250px;
+    }
+    &-title {
+        @include title-param;
+        color: $title-color-main;
+        text-align: center;
+    }
+    &-subtitle {
+        @include subtitle-param;
+        color: $text-color-secondary;
+        text-align: center;
+    }
     &-info {
-        &-about{
-            &-title {}
-            &-text {}
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        &-about {
+            margin-right: 15px;
+            &-title {
+                @include title-small-param;
+                color: $title-color-main;
+                margin-bottom: 20px;
+            }
+            &-text {
+                @include open-sans;
+                @include text-param;
+                color: $text-color-main;
+                max-width: 470px;
+            }
             &-links {
                 display: flex;
-                span {}
-                ul { 
+                margin-top: 30px;
+                span {
+                    @include subtitle-bold-param;
+                    color: $title-color-main;
+                    margin-right: 15px;
+                }
+                ul {
                     display: flex;
                 }
-                li {}
+                li {
+                    margin: 0px 8px;
+                }
                 &-item {
                     display: block;
                     svg {
                         height: 20px;
                         path {
                             fill: $text-color-secondary;
+                            transition: $transition-time;
+                        }
+                    }
+                    &:hover {
+                        svg {
+                            path {
+                                fill: $text-color-main;
+                            }
                         }
                     }
                 }
             }
         }
+        &-table {
+            &-title {
+                @include title-small-param;
+                color: $title-color-main;
+                margin-bottom: 20px;
+            }
+            &-list {
+                column-count: 2;
+                &-item {
+                    @include text-param;
+                    @include open-sans;
+                    color: $text-color-main;
+                    margin-bottom: 8px;
+                    display: block;
+
+                    &::before {
+                        content: "+";
+                        background-image: $btn-gradient-color;
+                        color: $btn-text-color;
+                        padding: 1px 7px;
+                        margin-right: 5px;
+                        text-decoration: none;
+                        transition: $transition-time;
+                    }
+
+                    &:hover {
+                        span {
+                            text-decoration: underline;
+                        }
+                        &::before {
+                            color: $text-color-main;
+                        }
+                    }
+                }
+            }
+            &-btn {
+                max-width: 140px;
+                margin-top: 30px;
+            }
+        }
     }
-
-
 }
