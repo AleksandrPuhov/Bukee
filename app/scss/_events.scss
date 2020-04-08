@@ -1,0 +1,94 @@
+.events {
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 160px 0 160px;
+    }
+    &-photo {
+        margin-right: 30px;
+        img {
+            background-image: $author-bg-photo-gradient;
+            background-size: calc(100% - 50px) 100%;
+            background-repeat: no-repeat;
+            background-position: left;
+            padding: 50px 0px 50px 50px;
+        }
+    }
+    &-info {
+        &-name {
+            @include open-sans;
+            @include subtitle-param;
+            color: $text-color-main;
+        }
+        &-title {
+            @include title-param;
+            color: $title-color-main;
+            margin-top: 5px;
+        }
+        &-subtitle {
+            @include subtitle-param;
+            color: $text-color-secondary;
+        }
+
+        ul {
+            margin-top: 30px;
+        }
+
+        li + li {
+            margin-top: 60px;
+        }
+
+        &-event {
+            time {
+                @include open-sans;
+                @include text-param;
+                color: $text-color-main;
+            }
+            h4 {
+                @include subtitle-bold-param;
+                color: $title-color-main;
+                margin: 5px 0 15px;
+            }
+            p {
+                @include open-sans;
+                @include text-param;
+                color: $text-color-main;
+                max-width: 570px;
+            }
+            a {
+                max-width: 140px;
+                margin-top: 25px;
+            }
+        }
+    }
+    @media screen and (max-width: $tablet-wide) {
+        &-inner {
+            flex-direction: column;
+            padding: 100px 0 100px;
+        }
+        &-photo {
+            margin: 0 auto 20px;
+            img {
+                width: 100%;
+            }
+        }
+        &-info {
+            &-event {
+                p {
+                    max-width: none;
+                }
+                a {
+                    margin: 25px auto 0;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $phone) {
+        &-photo {
+            img {
+                background-size: calc(100% - 35px) 100%;
+                padding: 35px 0px 35px 35px;
+            }
+        }
+    }
+}

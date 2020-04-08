@@ -49,7 +49,7 @@
         <div class="wrapper">
             <div class="header-inner">
                 <div class="header-top">
-                    <a href=""><img src="./img/Logo.png" alt="logo"></a>
+                    <a href="" target="_blank"><img src="./img/Logo.png" alt="logo"></a>
                     <nav class="header-top-nav">
                         <ul>
                             <li><a href="" target="_blank">Home</a></li>
@@ -63,13 +63,17 @@
                             <li><a href="" target="_blank">Contact</a></li>
                         </ul>
                     </nav>
+                    <div class="header-top-burger">
+                        <svg height="512" viewBox="0 -53 384 384" width="512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 277.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0" />
+                            </svg>
+                    </div>
                 </div>
                 <div class="header-content">
                     <div class="header-content-wrap">
                         <div class="header-content-book">
-                            <h2 class="header-content-book-title">Good book</h2>
-                            <p class="header-content-book-subtitle">Don’t judge a book by its cover</p>
-                            <p class="header-content-book-autor">- By Emma Anderson</p>
+                            <img src="./img/header-book.png" alt="Book">
                         </div>
                         <div class="header-content-info">
                             <p class="header-content-info-autor">- By Emma Anderson</p>
@@ -255,9 +259,7 @@
                         <li>
                             <div class="other-item">
                                 <div class="other-item-book">
-                                    <h2 class="other-item-book-title">Inception</h2>
-                                    <p class="other-item-book-subtitle">Books are the best friends</p>
-                                    <p class="other-item-book-autor">- By Emma Anderson</p>
+                                    <img src="./img/book-inception.png" alt="Book">
                                 </div>
                                 <h3 class="other-item-title">Inception</h3>
                                 <p class="other-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -269,9 +271,7 @@
                         <li>
                             <div class="other-item">
                                 <div class="other-item-book">
-                                    <h2 class="other-item-book-title">Fight Club</h2>
-                                    <p class="other-item-book-subtitle">Books are the best friends</p>
-                                    <p class="other-item-book-autor">- By Emma Anderson</p>
+                                    <img src="./img/book-fight-club.png" alt="Book">
                                 </div>
                                 <h3 class="other-item-title">Fight Club</h3>
                                 <p class="other-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -283,9 +283,7 @@
                         <li>
                             <div class="other-item">
                                 <div class="other-item-book">
-                                    <h2 class="other-item-book-title">Daredevils</h2>
-                                    <p class="other-item-book-subtitle">Books are the best friends</p>
-                                    <p class="other-item-book-autor">- By Emma Anderson</p>
+                                    <img src="./img/book-daredevils.png" alt="Book">
                                 </div>
                                 <h3 class="other-item-title">Daredevils</h3>
                                 <p class="other-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -302,52 +300,308 @@
         <section class="testimonial">
             <div class="wrapper">
                 <div class="testimonial-inner">
-
                     <div class="testimonial-swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">
+                                <blockquote class="testimonial-item">
+                                    <figure>
+                                        <img class="testimonial-item-photo" src="./img/testimonial-photo.png"
+                                            alt="Photo" />
+                                        <img class="testimonial-item-quote" src="./img/icons/quote.svg"
+                                            alt="quote-icon" />
+                                        <figcaption>
+                                            <span class="testimonial-item-name">Kate Dennings</span>
+                                            <span class="testimonial-item-qualification">Calligraphy Expert</span>
+                                        </figcaption>
+                                    </figure>
+                                    <a href="" class="testimonial-item-text" target="_blank">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                            ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                            facilisis.</p>
+                                    </a>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote class="testimonial-item">
+                                    <figure>
+                                        <img class="testimonial-item-photo" src="./img/testimonial-photo.png"
+                                            alt="Photo" />
+                                        <img class="testimonial-item-quote" src="./img/icons/quote.svg"
+                                            alt="quote-icon" />
+                                        <figcaption>
+                                            <span class="testimonial-item-name">Kate Dennings</span>
+                                            <span class="testimonial-item-qualification">Calligraphy Expert</span>
+                                        </figcaption>
+                                    </figure>
+                                    <a href="" class="testimonial-item-text" target="_blank">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                            ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                            facilisis.</p>
+                                    </a>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote class="testimonial-item">
+                                    <figure>
+                                        <img class="testimonial-item-photo" src="./img/testimonial-photo.png"
+                                            alt="Photo" />
+                                        <img class="testimonial-item-quote" src="./img/icons/quote.svg"
+                                            alt="quote-icon" />
+                                        <figcaption>
+                                            <span class="testimonial-item-name">Kate Dennings</span>
+                                            <span class="testimonial-item-qualification">Calligraphy Expert</span>
+                                        </figcaption>
+                                    </figure>
+                                    <a href="" class="testimonial-item-text" target="_blank">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                            ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                            facilisis.</p>
+                                    </a>
+                                </blockquote>
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
-
                     </div>
-
-
-
                 </div>
             </div>
         </section>
         <section class="events">
             <div class="wrapper">
-                events
+                <div class="events-inner">
+                    <div class="events-photo">
+                        <img src="./img/events-photo.jpg" alt="Photo">
+                    </div>
+                    <div class="events-info">
+                        <p class="events-info-name">- Emma Anderson</p>
+                        <h1 class="events-info-title">Upcoming Events</h1>
+                        <p class="events-info-subtitle">Some upcoming events you might be interested in</p>
+                        <ul>
+                            <li class="events-info-event">
+                                <time datetime="2018-11-21">November 21, 2018</time>
+                                <h4>Book signing - San francisco, CA</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices
+                                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <a href="" target="_blank" class="btn-gradient">Register</a>
+                            </li>
+                            <li class="events-info-event">
+                                <time datetime="2018-11-21">November 21, 2018</time>
+                                <h4>Book signing - San francisco, CA</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices
+                                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <a href="" target="_blank" class="btn-gradient">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
-
         <section class="blog">
             <div class="wrapper">
-                blog
+                <div class="blog-inner">
+                    <h1 class="blog-title">Latest from Blog</h1>
+                    <p class="blog-subtitle">Some of the latest posts from my personal blog</p>
+                    <ul>
+                        <li>
+                            <blockquote class="blog-item">
+                                <figure>
+                                    <img src="./img/blog-img-1.jpg" alt="Image" />
+                                    <figcaption>
+                                        <h4>Importance of light in photography</h5>
+                                            <span>By Emma Anderson - <time datetime="2018-6-20">June 20,
+                                                    2018</time></span>
+                                    </figcaption>
+                                </figure>
+                                <a href="" class="blog-item-text" target="_blank">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.</p>
+                                </a>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blog-item">
+                                <figure>
+                                    <img src="./img/blog-img-2.jpg" alt="Image" />
+                                    <figcaption>
+                                        <h4>The tools you need for the perfection</h5>
+                                            <span>By Emma Anderson - <time datetime="2018-6-25">June 25,
+                                                    2018</time></span>
+                                    </figcaption>
+                                </figure>
+                                <a href="" class="blog-item-text" target="_blank">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.</p>
+                                </a>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blog-item">
+                                <figure>
+                                    <img src="./img/blog-img-3.jpg" alt="Image" />
+                                    <figcaption>
+                                        <h4>Knowing the difference is important</h5>
+                                            <span>By Emma Anderson - <time datetime="2018-8-22">August 22,
+                                                    2018</time></span>
+                                    </figcaption>
+                                </figure>
+                                <a href="" class="blog-item-text" target="_blank">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.</p>
+                                </a>
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <a href="" target="_blank" class="blog-btn btn-gradient">Read more in the blog</a>
+                </div>
             </div>
         </section>
-
         <section class="subscribe">
             <div class="wrapper">
-                subscribe
+                <div class="subscribe-inner">
+                    <div class="subscribe-info">
+                        <h1 class="subscribe-info-title">Join Newsletter</h1>
+                        <p class="subscribe-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices
+                            gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    </div>
+                    <form action="" class="subscribe-form" autocomplete="on">
+                        <input type="email" class="subscribe-form-email" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-form-btn btn-gradient">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </section>
-
     </main>
     <footer class="footer">
         <div class="wrapper">
-            footer
+            <div class="footer-inner">
+                <div class="footer-about">
+                    <a href="" target="_blank"><img src="./img/Logo-footer.png" alt="logo"></a>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>© 2018 Bukee Private Limited.</p>
+                </div>
+                <div class="footer-wrapper">
+                    <div class="footer-links">
+                        <h4 class="footer-links-title">Useful Links</h4>
+                        <ul>
+                            <li><a href="" target="_blank" class="footer-links-link">About Bukee</a></li>
+                            <li><a href="" target="_blank" class="footer-links-link">Explore Our Ecosystem</a></li>
+                            <li><a href="" target="_blank" class="footer-links-link">Monthly Community Meetup</a></li>
+                            <li><a href="" target="_blank" class="footer-links-link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contacts">
+                        <h4 class="footer-contacts-title">Our Contacts</h4>
+                        <ul>
+                            <li><a href="" class="footer-contacts-address" target="_blank">Amphitheatre Parkway, CA,
+                                    94043</a></li>
+                            <li><a href="" href="tel:+4455663322" class="footer-contacts-tel" target="_blank">Call us
+                                    on:
+                                    +4455663322</a></li>
+                            <li><a href="mailto:support@bukee.mail" class="footer-contacts-email" target="_blank">Email:
+                                    support@bukee.mail</a></li>
+                            <li>
+                                <ul class="footer-contacts-socials">
+                                    <li>
+                                        <a href="" class="footer-contacts-socials-icon" target="_blank">
+                                            <svg height="512" viewBox="0 0 24 24" width="512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-contacts-socials-icon" target="_blank">
+                                            <svg height="512" viewBox="0 0 24 24" width="512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.534 7.113A9.822 9.822 0 0024 4.559v-.001c-.893.391-1.843.651-2.835.777a4.894 4.894 0 002.165-2.719 9.845 9.845 0 01-3.12 1.191 4.919 4.919 0 00-8.511 3.364c0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147a4.962 4.962 0 00-.674 2.487c0 1.704.877 3.214 2.186 4.089A4.863 4.863 0 01.96 9.116v.054a4.943 4.943 0 003.942 4.835c-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428a9.89 9.89 0 01-6.101 2.098c-.403 0-.79-.018-1.177-.067a13.856 13.856 0 007.548 2.208c8.683 0 14.342-7.244 13.986-14.637z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" class="footer-contacts-socials-icon" target="_blank">
+                                            <svg height="512" viewBox="0 0 24 24" width="512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M.975 4.175v16.694h5.749V24h3.139l3.134-3.132h4.705l6.274-6.258V0H2.542zm3.658-2.09h17.252v11.479l-3.66 3.652h-5.751L9.34 20.343v-3.127H4.633z" />
+                                                <path
+                                                    d="M10.385 6.262h2.09v6.26h-2.09zM16.133 6.262h2.091v6.26h-2.091z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-contacts-socials-icon" target="_blank">
+                                            <svg height="512" viewBox="0 0 24 24" width="512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.469 5.929l.03.196a3.043 3.043 0 00-2.068-2.112l-.021-.005c-1.871-.508-9.4-.508-9.4-.508s-7.51-.01-9.4.508A3.044 3.044 0 00.527 6.104l-.005.021c-.699 3.651-.704 8.038.031 11.947l-.031-.198a3.043 3.043 0 002.068 2.112l.021.005c1.869.509 9.4.509 9.4.509s7.509 0 9.4-.509a3.043 3.043 0 002.084-2.096l.005-.021c.318-1.698.5-3.652.5-5.648l-.001-.221.001-.23c0-1.997-.182-3.951-.531-5.846zM9.608 15.651V8.358l6.266 3.652z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-contacts-socials-icon" target="_blank">
+                                            <svg height="512" viewBox="0 0 24 24" width="512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M.096 11.243c.267.777 1.023 1.286 1.8 1.318.365.054.643-.086 3.092-.9l1.623 4.822-2.432.809c-1.018.333-1.559 1.441-1.232 2.46.267.777 1.023 1.286 1.8 1.318.365.054.643-.086 3.092-.901l.841 2.518c.317.905 1.323 1.553 2.464 1.226 1.023-.333 1.559-1.436 1.232-2.46l-.841-2.518 5.014-1.677.841 2.518c.317.905 1.323 1.553 2.464 1.226 1.023-.333 1.559-1.436 1.232-2.46l-.841-2.518 2.432-.809c1.018-.321 1.559-1.431 1.226-2.448l-.001-.001c-.333-1.018-1.441-1.559-2.464-1.226l-2.432.809-1.623-4.822 2.432-.809c1.023-.333 1.559-1.436 1.232-2.46-.333-1.018-1.441-1.559-2.464-1.226l-2.433.81-.841-2.518C14.976.306 13.868-.235 12.845.098s-1.559 1.436-1.232 2.46l.841 2.518L7.45 6.747l-.841-2.518C6.276 3.21 5.168 2.67 4.145 3.002c-1.023.333-1.559 1.436-1.232 2.46l.841 2.518-2.426.803c-1.023.333-1.559 1.436-1.232 2.46zm13.578-2.455l1.623 4.833-5.009 1.677-1.623-4.832z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-contacts-socials-icon" target="_blank">
+                                            <svg height="512" viewBox="0 0 24 24" width="512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.507 14.307l-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z" />
+                                                <path
+                                                    d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 017.021 2.91 9.788 9.788 0 012.909 6.99z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <div class="modal">
+        <nav class="modal-nav">
+            <ul>
+                <li><a href="" target="_blank">Home</a></li>
+                <li><a href="" target="_blank">About</a></li>
+                <li><a href="" target="_blank">Contents</a></li>
+                <li><a href="" target="_blank">Books</a></li>
+                <li><a href="" target="_blank">Education</a></li>
+                <li><a href="" target="_blank">Skills</a></li>
+                <li><a href="" target="_blank">Portfolio</a></li>
+                <li><a href="" target="_blank">Clients</a></li>
+                <li><a href="" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/lib/swiper.min.js"></script>
     <!--build:js js/main.min.js -->
     <script src="js/main.js"></script>
     <!-- endbuild -->
-
 </body>
 
 </html>

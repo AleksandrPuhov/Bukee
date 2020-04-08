@@ -17,6 +17,7 @@
         justify-content: space-between;
         align-items: center;
         flex-shrink: 1;
+        position: relative;
         &-logo {
         }
         &-nav {
@@ -41,6 +42,32 @@
                 }
             }
         }
+
+        &-burger {
+            display: none;
+            width: 50px;
+            height: 40px;
+            cursor: pointer;
+            position: fixed;
+            z-index: 40;
+            right: 40px;
+            top: 45px;
+            svg {
+                height: 100%;
+                width: 100%;
+                path {
+                    fill: $btn-burger-main;
+                    transition: $transition-time;
+                }
+            }
+            &:hover {
+                svg {
+                    path {
+                        fill: $btn-burger-secondary;
+                    }
+                }
+            }
+        }
     }
     &-content {
         display: flex;
@@ -53,39 +80,6 @@
 
         &-book {
             display: block;
-            background-image: url(../img/header-book.svg);
-            background-repeat: no-repeat;
-            height: 640px;
-            min-width: 450px;
-            background-size: contain;
-
-            &-title {
-                font-size: 36px;
-                font-weight: 700;
-                text-transform: uppercase;
-                line-height: 1.2;
-                text-align: center;
-                letter-spacing: 0.02em;
-                margin-left: 30px;
-                margin-top: 110px;
-            }
-            &-subtitle,
-            &-autor {
-                @include open-sans;
-                color: $text-color-secondary;
-                font-size: 14px;
-                line-height: 1.714;
-            }
-            &-subtitle {
-                text-align: center;
-                letter-spacing: $text-letter-spacing;
-                margin-left: 30px;
-            }
-            &-autor {
-                letter-spacing: $text-letter-spacing;
-                margin-left: 85px;
-                margin-top: 390px;
-            }
         }
         &-info {
             padding-left: 50px;
@@ -116,6 +110,46 @@
                 font-size: 12px;
                 letter-spacing: 0.02em;
                 display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width: $tablet-wide) {
+        &-top {
+            &-nav {
+                display: none;
+            }
+            &-burger {
+                display: block;
+                // &.active {
+                //     display: none;
+                // }
+            }
+        }
+
+        &-content {
+            margin-top: 20px;
+            &-wrap {
+                flex-direction: column;
+            }
+            &-book {
+                margin: 0 auto;
+                max-width: 350px;
+                img {
+                    width: 100%;
+                }
+            }
+
+            &-info {
+                padding-left: 0;
+
+                &-btn {
+                    max-width: 300px;
+                    margin: 45px auto 20px;
+                }
+                em {
+                    text-align: center;
+                }
             }
         }
     }

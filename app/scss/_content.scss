@@ -1,5 +1,5 @@
 .content {
-    background-color: $content-gradient-color;
+    background-color: $content-bg-color;
 
     &-inner {
         padding: 150px 0 250px;
@@ -102,6 +102,36 @@
             &-btn {
                 max-width: 140px;
                 margin-top: 30px;
+            }
+        }
+    }
+    @media screen and (max-width: $tablet-wide) {
+        &-inner {
+            padding: 100px 0 100px;
+        }
+        &-info {
+            flex-direction: column;
+
+            &-about {
+                margin: 0 0 20px;
+                &-text {
+                    max-width: none;
+                }
+            }
+            &-table {
+                &-btn {
+                    margin: 30px auto 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $tablet) {
+        &-info {
+            &-table {
+                &-list {
+                    column-count: 1;
+                }
             }
         }
     }

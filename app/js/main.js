@@ -1,11 +1,15 @@
-var mySwiper = new Swiper('.testimonial-swiper-container', {
-    direction: 'horizontal',
-    loop: true,
+$(document).ready(function () {
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+    const mySwiper = new Swiper('.testimonial-swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
 
-})
+    $('.header-top-burger, .modal').click((event) => {
+         $('.header-top-burger, .modal').toggleClass('active')
+    })
+});

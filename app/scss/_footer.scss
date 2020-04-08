@@ -1,0 +1,141 @@
+.footer {
+    background-color: $footer-bg-color;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -10px;
+        padding: 160px 0 150px;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 60%;
+    }
+
+    &-wrapper,
+    &-about,
+    &-links,
+    &-contacts {
+        padding: 0 10px;
+    }
+
+    &-links-title,
+    &-contacts-title {
+        @include subtitle-bold-param;
+        color: $text-color-secondary;
+        text-transform: uppercase;
+        margin: 8px 0 20px;
+    }
+    &-links-link,
+    &-contacts-address,
+    &-contacts-tel,
+    &-contacts-email,
+    p {
+        @include open-sans;
+        @include text-param;
+        color: $footer-text-color;
+    }
+    &-about {
+        flex-basis: 40%;
+        a {
+            display: block;
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 380px;
+        }
+        p + p {
+            margin-top: 25px;
+        }
+    }
+    &-links {
+        flex-basis: 50%;
+        &-link {
+            margin-bottom: 5px;
+            display: block;
+            transition: $transition-time;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &-contacts {
+        flex-basis: 50%;
+        &-address {
+            transition: $transition-time;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &-tel {
+            transition: $transition-time;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &-email {
+            transition: $transition-time;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &-socials {
+            margin-top: 15px;
+            display: flex;
+
+            &-icon {
+                display: block;
+                height: 15px;
+                width: 15px;
+                margin-right: 12px;
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    path {
+                        transition: $transition-time;
+                        fill: $text-color-secondary;
+                    }
+                }
+                &:hover {
+                    svg {
+                        path {
+                            fill: $footer-text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $tablet-wide) {
+        &-inner {
+            flex-direction: column;
+            padding: 80px 0 40px;
+            margin: 0;
+        }
+        &-wrapper {
+            padding: 0;
+        }
+
+        &-about {
+            padding: 0;
+            p {
+                max-width: none;
+            }
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: $tablet) {
+        &-wrapper {
+            flex-direction: column;
+        }
+        &-links,
+        &-contacts {
+            padding: 0;
+        }
+        &-links {
+            margin-bottom: 30px;
+        }
+    }
+}
